@@ -1,0 +1,29 @@
+.date {
+  text-align: center;
+  position: relative;
+  background-color: white;
+  margin: 0 50px;
+}
+
+.date::before {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 30%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 10px;
+  left: 25%;
+  transform: translateX(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
+}
+.date::after {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 30%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 10px;
+  left: 75%;
+  transform: translateX(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
+}

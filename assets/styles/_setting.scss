@@ -1,1 +1,38 @@
-
+@font-face {
+  font-family: "font-1";
+  src: url(../fonts/Merriweathersans/MerriweatherSans-Regular.ttf);
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "font-1";
+  background: url(../img/bg.jpg) fixed center/cover;
+  height: 100vh;
+}
+@mixin displayflex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@mixin centerchild {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section1 {
+  background-color: white;
+  margin: 0 50px;
+}
+.section2 {
+  margin-top: 100px;
+}
+button {
+  padding: 15px 30px;
+  background: none;
+  letter-spacing: 1.3px;
+  font-weight: bolder;
+}

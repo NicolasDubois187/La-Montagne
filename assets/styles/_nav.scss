@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+  background-color: white;
+  margin: 0 50px;
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  h6 {
+    margin: 0 30px;
+  }
+  img {
+    margin: 0 10px;
+  }
+}

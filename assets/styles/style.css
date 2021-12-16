@@ -1,1 +1,236 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "font-1";
+  src: url(../fonts/Merriweathersans/MerriweatherSans-Regular.ttf);
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "font-1";
+  background: url(../img/bg.jpg) fixed center/cover;
+  height: 100vh;
+}
+
+.section1 {
+  background-color: white;
+  margin: 0 50px;
+}
+
+.section2 {
+  margin-top: 100px;
+}
+
+button {
+  padding: 15px 30px;
+  background: none;
+  letter-spacing: 1.3px;
+  font-weight: bolder;
+}
+
+.body-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  margin: 40px auto;
+}
+
+.body-text h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.body-text p {
+  font-size: 0.8rem;
+  margin: 30px 20px;
+}
+
+.body-text li {
+  border: 1px solid #d1d1d1;
+  width: 50px;
+  height: 50px;
+  border-radius: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+  background-color: white;
+  margin: 0 50px;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav h6 {
+  margin: 0 30px;
+}
+
+nav img {
+  margin: 0 10px;
+}
+
+.date {
+  text-align: center;
+  position: relative;
+  background-color: white;
+  margin: 0 50px;
+}
+
+.date::before {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 30%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 10px;
+  left: 25%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: rgba(134, 126, 126, 0.685);
+          box-shadow: rgba(134, 126, 126, 0.685);
+}
+
+.date::after {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 30%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 10px;
+  left: 75%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: rgba(134, 126, 126, 0.685);
+          box-shadow: rgba(134, 126, 126, 0.685);
+}
+
+.headline {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 70px;
+  margin-bottom: 100px;
+  background-color: white;
+  margin: 0 50px;
+}
+
+.headline img {
+  max-width: 100%;
+  padding: 0 100px;
+}
+
+.headline h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.headline p {
+  margin: 50px 200px;
+  line-height: 35px;
+}
+
+.headline button {
+  margin-top: 50px;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-color: white;
+  margin: 0 50px;
+  height: 100vh;
+}
+
+.card h4 {
+  padding-top: 50px;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.card img {
+  width: 100%;
+  padding: 50px;
+}
+
+.card p {
+  padding: 0 40px;
+  line-height: 35px;
+}
+
+.card .magna,
+.card .primis {
+  position: relative;
+}
+
+.card button {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=style.css.map */
