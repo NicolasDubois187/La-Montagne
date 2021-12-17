@@ -86,3 +86,14 @@ footer::before {
   transform: translatex(-50%);
   box-shadow: rgba(134, 126, 126, 0.685);
 }
+// footer::after {
+//   content: "";
+//   position: absolute;
+//   height: 1.2px;
+//   width: 50%;
+//   background: rgba(107, 104, 104, 0.247);
+//   top: 345px;
+//   left: 75%;
+//   transform: translateX(-50%);
+//   box-shadow: rgba(134, 126, 126, 0.685);
+// }

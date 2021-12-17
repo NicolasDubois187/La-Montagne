@@ -3,8 +3,7 @@
   grid-template-columns: 50% 50%;
   text-align: center;
   background-color: white;
-  padding-bottom: 120px;
-  padding-top: 200px;
+
   position: relative;
 
   .date-card {
@@ -28,7 +27,10 @@
   .magna,
   .primis {
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
+
   button {
     position: absolute;
 
@@ -40,11 +42,11 @@
   content: "";
   position: absolute;
   width: 1.2px;
-  height: 950px;
+  height: 100%;
   background: rgba(107, 104, 104, 0.247);
-  bottom: 0px;
+  top: 50%;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translatey(-50%);
   box-shadow: rgba(134, 126, 126, 0.685);
 }
 .card::after {
@@ -53,7 +55,7 @@
   height: 1.2px;
   width: 100%;
   background: rgba(107, 104, 104, 0.247);
-  top: 110px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: rgba(134, 126, 126, 0.685);
