@@ -2,16 +2,19 @@
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
   background-color: white;
-  margin: 0 50px;
-  height: 100vh;
+  padding-bottom: 120px;
+  padding-top: 200px;
+  position: relative;
 
+  .date-card {
+    padding-bottom: 0px;
+  }
   h4 {
-    padding-top: 50px;
+    padding-top: 20px;
     font-size: 2rem;
     letter-spacing: 5px;
+    line-height: 50px;
   }
   img {
     width: 100%;
@@ -20,6 +23,7 @@
   p {
     padding: 0 40px;
     line-height: 35px;
+    padding-bottom: 30px;
   }
   .magna,
   .primis {
@@ -27,9 +31,30 @@
   }
   button {
     position: absolute;
-    bottom: 0px;
 
     left: 50%;
     transform: translateX(-50%);
   }
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 1.2px;
+  height: 950px;
+  background: rgba(107, 104, 104, 0.247);
+  bottom: 0px;
+  left: 50%;
+  transform: translatex(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
+}
+.card::after {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 100%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
 }

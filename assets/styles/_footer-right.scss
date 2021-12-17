@@ -1,0 +1,64 @@
+.contact {
+  display: grid;
+  flex-direction: column;
+  padding: 0 50px;
+  position: relative;
+
+  .address,
+  .phone,
+  .email,
+  .social {
+    @include displaygrid();
+  }
+
+  h6 {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  p {
+    line-height: 40px;
+  }
+  .address p {
+    text-align: left;
+  }
+  .social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social li {
+    border: 1px solid rgb(209, 209, 209);
+    margin: 0 5px;
+    border-radius: 150px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 100%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 50%;
+  background: rgba(107, 104, 104, 0.247);
+  top: 355px;
+  left: 75%;
+  transform: translateX(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
+}

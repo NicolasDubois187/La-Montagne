@@ -3,15 +3,36 @@
   src: url(../fonts/Merriweathersans/MerriweatherSans-Regular.ttf);
 }
 * {
-  list-style: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+li {
+  list-style: none;
+}
 body {
   font-family: "font-1";
   background: url(../img/bg.jpg) fixed center/cover;
-  height: 100vh;
+  min-height: 100vh;
+  text-align: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #1e252d;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.3s;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  }
 }
 @mixin displayflex {
   display: flex;
@@ -19,20 +40,49 @@ body {
   text-align: center;
 }
 @mixin centerchild {
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
-.section1 {
-  background-color: white;
-  margin: 0 50px;
+@mixin displaygrid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
 }
-.section2 {
-  margin-top: 100px;
+main {
+  width: 85%;
+  margin: -65px auto 30px;
 }
+
 button {
   padding: 15px 30px;
   background: none;
   letter-spacing: 1.3px;
   font-weight: bolder;
+  border: 2.4px solid;
+  box-shadow: -2px -1px 20px 0px rgba(0, 0, 0, 0.027);
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+footer {
+  background-color: white;
+  width: 85%;
+  margin: -65px auto 30px;
+  margin-top: 1px;
+  font-family: "font-1";
+  color: grey;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 1.2px;
+  height: 100%;
+  background: rgba(107, 104, 104, 0.247);
+  left: 50%;
+  transform: translatex(-50%);
+  box-shadow: rgba(134, 126, 126, 0.685);
 }

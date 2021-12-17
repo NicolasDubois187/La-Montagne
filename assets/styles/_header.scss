@@ -1,0 +1,50 @@
+header {
+  @include centerchild();
+  flex-direction: column;
+  color: white;
+  min-height: 100vh;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: headeranim 1.5s forwards;
+
+  @keyframes headeranim {
+    100% {
+      transform: translateY(-40px);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  p {
+    font-style: italic;
+    margin: 40px auto 60px;
+    width: 85%;
+  }
+  li {
+    border: 2.5px solid rgb(209, 209, 209);
+    width: 60px;
+    height: 60px;
+    border-radius: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      border: 1px solid skyblue;
+      color: skyblue;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
