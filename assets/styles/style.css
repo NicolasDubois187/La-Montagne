@@ -460,6 +460,20 @@ footer button {
   color: grey;
 }
 
+@media (max-width: 1200px) {
+  footer {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    padding-bottom: 20px;
+  }
+  footer button {
+    bottom: 50px;
+  }
+  footer::before {
+    display: none;
+  }
+}
+
 .contact {
   display: -ms-grid;
   display: grid;
@@ -511,17 +525,10 @@ footer button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contact .social li {
   border: 1px solid #d1d1d1;
-  margin: 0 5px;
   border-radius: 150px;
   width: 50px;
   height: 50px;
@@ -538,5 +545,18 @@ footer button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .address,
+  .phone,
+  .email,
+  .social {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .address {
+    border-top: 1px solid rgba(107, 104, 104, 0.247);
+  }
 }
 /*# sourceMappingURL=style.css.map */

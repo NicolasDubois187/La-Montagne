@@ -33,12 +33,9 @@
   }
   .social ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .social li {
     border: 1px solid rgb(209, 209, 209);
-    margin: 0 5px;
     border-radius: 150px;
     width: 50px;
     height: 50px;
@@ -50,6 +47,21 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 1200px) {
+  .address,
+  .phone,
+  .email,
+  .social {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .address {
+    border-top: 1px solid rgba(107, 104, 104, 0.247);
+  }
+}
+@media (max-width: 610px) {
+}
+
 // .contact::before {
 //   content: "";
 //   position: absolute;

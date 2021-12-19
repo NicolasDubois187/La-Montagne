@@ -45,3 +45,15 @@ footer {
     color: grey;
   }
 }
+@media (max-width: 1200px) {
+  footer {
+    grid-template-columns: 100%;
+    button {
+      bottom: 50px;
+    }
+    padding-bottom: 20px;
+  }
+  footer::before {
+    display: none;
+  }
+}
