@@ -48,3 +48,33 @@ header {
     text-align: center;
   }
 }
+@media (max-width: 1000px) {
+  header {
+    min-height: 70vh;
+  }
+}
+@media (max-width: 850px) {
+  header {
+    min-height: 50vh;
+    padding-top: 300px;
+  }
+  header ul,
+  header li {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}

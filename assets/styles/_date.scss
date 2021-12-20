@@ -27,3 +27,27 @@
   transform: translateX(-50%);
   box-shadow: rgba(134, 126, 126, 0.685);
 }
+@media (max-width: 850px) {
+  .date::before,
+  .date::after {
+    width: 25%;
+  }
+}
+@media (max-width: 650px) {
+  .date::before,
+  .date::after {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .date::before,
+  .date::after {
+    width: 15%;
+  }
+}
+@media (max-width: 400px) {
+  .date::before,
+  .date::after {
+    width: 10%;
+  }
+}

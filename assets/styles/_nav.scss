@@ -53,3 +53,13 @@ nav {
     }
   }
 }
+@media (max-width: 800px) {
+  .nav-icons {
+    display: none;
+  }
+}
+@media (max-width: 415px) {
+  .menu li {
+    font-size: 0.8rem;
+  }
+}
