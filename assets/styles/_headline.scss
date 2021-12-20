@@ -8,6 +8,12 @@
   position: relative;
 
   position: relative;
+  .img1 span {
+    transition: 0.4s ease;
+  }
+  .img1 span:hover {
+      transform: scale(1.5);
+  }
   img {
     max-width: 100%;
     padding: 0 50px;
@@ -21,6 +27,7 @@
     margin: 40px auto 60px;
     width: 85%;
     line-height: 35px;
+    font-style: italic;
   }
   button {
     bottom: 100px;
