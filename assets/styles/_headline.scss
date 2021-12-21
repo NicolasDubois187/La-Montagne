@@ -7,17 +7,22 @@
   background-color: white;
   position: relative;
 
-  position: relative;
-  .img1 span {
-    transition: 0.4s ease;
+  .img1 {
+    overflow: hidden;
+    margin: 50px;
+    
+    img {
+      object-fit: cover;
+      transition: 0.8s ease;
+      height: 100%;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
-  .img1 span:hover {
-      transform: scale(1.5);
-  }
-  img {
-    max-width: 100%;
-    padding: 0 50px;
-  }
+  
   h2 {
     font-size: 3rem;
     font-weight: bold;

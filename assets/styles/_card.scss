@@ -15,10 +15,38 @@
     letter-spacing: 5px;
     line-height: 50px;
   }
-  img {
-    width: 100%;
-    padding: 50px;
+  .img2 {
+    overflow: hidden;
+    margin: 50px;
+    
+    img {
+      object-fit: cover;
+      transition: 0.8s ease;
+      height: 100%;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
+  
+  .img3 {
+    overflow: hidden;
+   margin: 50px;
+
+   img {
+     object-fit: cover;
+     transition: 0.8s ease;
+     height: 100%;
+     width: 100%;
+
+     &:hover {
+       transform: scale(1.1);
+      }
+    } 
+  }
+
   p {
     padding: 0 40px;
     line-height: 35px;
